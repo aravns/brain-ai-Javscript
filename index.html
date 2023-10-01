@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brain AI</title>
+
+        <script src="//unpkg.com/brain.js" defer></script>
+        <script src="index.js" defer></script>
+
+        <style>
+            body {
+                background: #161515;
+            }
+            main {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 800px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                background: #444053;
+            }
+            .color {
+                width: 200px;
+                height: 200px;
+                border: solid;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            #buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            #diagram {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="diagram"></div>
+
+            <div id="colorElemnt" class="color">
+                <h3 style="color: #fff">White TEXT</h3>
+                <h3 style="color: #000">Black TEXT</h3>
+                <!-- In Guess text ai gona see the background color  -->
+                <h3 id="guess">Guess TEXT</h3>
+            </div>
+            <div id="buttons">
+                <button id="white-button">White</button>
+                <button id="black-button">Black</button>
+                <button id="print-button">Log</button>
+            </div>
+        </main>
+    </body>
+</html>
